@@ -378,8 +378,8 @@ body{
 }
 
 .projects-article:hover{
-    transform: scale(1.05);
-    transition: 0.7s ease;
+    transform: scale(1.07);
+    transition: 0.3s ease;
 }
 
 
@@ -414,7 +414,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     transform: rotateZ(45deg) translateX(9em) translateY(-9em);
-    animation: ongoingtag 2s infinite;
+    animation: ongoingtag 0.5s infinite;
 }
 @keyframes ongoingtag {
     0%{
