@@ -1,0 +1,621 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: gold;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.nav-bar h1{
+    white-space: nowrap;
+    margin-top: 0em;
+    color: teal;
+    cursor: url('images/batman.png'),auto; 
+    
+}
+
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+        margin-left: 25px;
+        margin-right: 25px;
+        white-space: nowrap;
+        color: #008080;
+        text-decoration: none;
+        transition: 0.7s ease;
+}
+
+.nav-link:hover{
+        background-color: teal;
+        color: #ffd700;
+        border-radius: 15px;
+        padding: 5px;
+        transition: 0.7s ease;
+}
+.resume-download:active{
+    transform: scale(0.9);
+}
+.resume{
+    margin-left: 25px;
+    margin-right: 25px;
+    white-space: nowrap;
+    background-color: teal;
+    color: gold;
+    border-radius: 15px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.7s ease;
+    position: relative;
+}
+.resume:hover{
+    box-shadow: 1rem 1rem 2rem teal;
+    
+}
+
+
+.menu-icon {
+    display: none;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .menu-icon div {
+    height: 3px;
+    background-color: teal;
+    margin: 4px 0;
+    border-radius: 50px;
+  }
+
+
+
+.hero-section{
+    text-align: center; 
+}
+
+.hero-image{
+    max-width: 50vw;
+    max-height: 50vh;
+    border-radius: 1000px; 
+    box-shadow: 1rem 1rem 1rem teal;
+    transform: scale(1);
+    text-shadow: 0 0 2px yellow;
+    transition: 3s ease;
+    
+}
+
+.hero-image:hover{
+    transform: scale(1.1);
+    box-shadow: 1rem 1rem 21rem teal;
+    transition: 3s ease;
+
+}
+.hero-article header h1{
+    display: inline-block;
+    font-size: 3em;
+    white-space: nowrap;
+    background-color: teal;
+    color: gold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 10px transparent;
+}
+
+.hero-article header h2{
+    display: inline-block;
+    font-size: 1.5;
+    color: teal;
+    line-height: 1em;
+    padding-right: 10px ;
+    border-right: 5px solid teal ;
+    margin-right: 10px;
+}
+
+.hero-article main {
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+
+.hero-article #job-title{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: teal;
+    animation: move-up-fade-out 2.5s ease-in-out forwards infinite
+}
+
+@keyframes move-up-fade-out {
+    0%{
+        transform: translateY(0.5em);
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(0.25em);
+        opacity: 0.5;
+    }
+    50%{
+        transform: translateY(0em);
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(-0.25em);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-0.5em);
+        opacity: 0;
+    }
+    
+  }
+
+
+/* About me section */
+.aboutme-section{
+    background-color: teal;
+    border-radius: 15px;
+}
+
+.aboutme-section > h1{
+    color: gold;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+.aboutme-section-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.experience-timeline{
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.experience-timeline::before{
+    content: "";
+    display: block;
+    background-color: gold;
+    width: 5px;
+    height: 80%;
+    margin-left: 10px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+.exp-container{
+    
+    background-image: linear-gradient(to right,rgb(236, 236, 146),white);
+    position: relative;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: 2s ease;
+}
+
+
+
+.exp-container h1{
+    font-size: 18px;
+    color: teal;
+    position: relative;
+}
+
+.exp-container h2{
+    font-size: 15px;
+    position: relative;
+    color: rgb(35, 175, 175);
+}
+
+.exp-container p{
+    font-size: 12px;
+    margin: 0;
+    position: relative;
+    color: teal;
+}
+
+.exp-container::before{
+    content: "";
+    display: block;
+    position: absolute ;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    left: -15px;
+    top: 50%;
+
+}
+
+.exp-container:hover::before{
+    background-color: gold;
+    
+}
+
+.exp-container:hover{
+    background-image: linear-gradient(to left,rgb(236, 236, 146),white);   
+    transition: 2s ease;
+}
+
+.experience-detailed{
+    padding: 20px;
+    
+}
+
+.exp-timer{
+    
+    padding: 30px;
+    
+    background-color: gold;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.exp-timer span{
+    
+    font-size: 32px;
+    font-weight: 500;
+    color: teal;
+}
+
+.exp-timer sub{
+    color: white;
+}
+
+.exp-timer p{
+    color: white;    
+    position: relative;
+    font-size: 20px;
+    
+}
+
+.skills h1{
+    color: white;
+}
+
+.logo-container img{
+    width: 50px;
+    padding: 10px;
+}
+
+
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    animation: gradientfillbt 0.3s ease forwards infinite;
+    z-index: 999;
+  }
+
+  @keyframes gradientfillbt {
+    0%{
+        background-image: linear-gradient(to right,teal,gold);
+    }
+    
+    25%{
+        background-image: linear-gradient(to top,teal,gold);
+    }
+    50%{
+        background-image: linear-gradient(to left,teal,gold);
+    }
+    75%{
+        background-image: linear-gradient(to bottom,teal,gold);
+    }
+    100%{
+        background-image: linear-gradient(to right,teal,gold);
+        
+    }
+  }
+#scroll-to-top:hover {
+    background: #555;
+}
+
+/* My Portfolios */
+
+.myportfolio-section{
+    background-color: gold;
+}
+
+.myportfolio-section > h1{
+    color: teal;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+.projects-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.projects-article{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    background-color: teal;
+    width: 20%;
+    height: 580px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: 0.7s ease;
+
+}
+
+.projects-article:hover{
+    transform: scale(1.05);
+    transition: 0.7s ease;
+}
+
+
+
+.projects-article img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px ;
+}
+.projects-article h1{
+    text-align: center;
+    font-size:1em;
+    position: relative;
+}
+
+.projects-article ~ h2{
+    font-size: 20px;
+    text-align: left;
+}
+.projects-article p{
+    text-overflow: ellipsis;
+    padding: 15px;
+}
+
+.projects-article:nth-child(4)::after{
+    content: "OnGoing";
+    display: block;
+    position: absolute;
+    background-color: white;
+    font-style: italic;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transform: rotateZ(45deg) translateX(9em) translateY(-9em);
+    animation: ongoingtag 2s infinite;
+}
+@keyframes ongoingtag {
+    0%{
+        color: gold;
+        box-shadow: 0 0 10px teal;
+    }
+    100%{
+        color: teal;
+        box-shadow: 0 0 10px gold;
+    }
+    
+}
+
+.project-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    color: white;
+}
+
+.project-links a {
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+/* Certifications */
+.certifications-section{
+    background-color: teal;
+    border-radius: 15px;
+}
+
+.certifications-section h1{
+    color: gold;
+    font-size: 32px;
+    padding-left: 10px;
+}
+.cert-image-container {
+    border: 2px solid red;
+    align-items: center;
+}
+
+.image-slide{
+    width: 50vw;
+    margin: auto auto;
+    align-items: center;
+    border: 2px solid crimson;
+    display: none;
+}
+
+.image-slide img{
+    text-align: center;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+/* Get in touch */
+
+.getintouch-section{
+    background-color: gold;
+}
+.getintouch-section > h1{
+    height: 10%;
+    color: teal;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+.getintouch-section main{
+    display: flex;
+    align-items: center;
+    border: 2px solid orange; 
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.hireme-container{
+
+    background-color: teal;
+    width: 40vw;
+    height: 60vh;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 1rem black;
+}
+
+.hireme-container h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Dancing Script',cursive;
+    animation: dancingscript 1s ease-in-out infinite;
+}
+
+@keyframes dancingscript{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hireme-container p{
+    color: white;
+    
+}
+
+.socials a{
+    padding: 10px;
+}
+
+form{
+    width: 50%;
+    height: 60vh;
+    display: inline-block;
+    margin-left: 20px;
+    border: 2px solid red; 
+}
+
+fieldset{
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+input,textarea{
+    width: 100%;
+}
+
+
+
+/* Footer */
+
+footer{
+    height: 15vh;
+    width: 100vw;
+    margin-left: -10px;
+    border-top: 2px double teal;
+    background-color: teal;
+    text-align: center;
+    color: white;
+}
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:890px) {
+
+    .menu-icon{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
+    .hero-article header h2{
+        display: none;
+    }
+    
+    .hero-article header h1{
+    font-size: 3em;
+    white-space: break-spaces;
+     }
+     .hero-article header h1::before{
+        font-size: 10px;     
+    }
+    .experience-timeline{
+        width: 100%;
+    }
+    .experience-detailed{
+        padding: 10px;
+        width: 100%;
+        
+    }
+    .exp-timer{
+        padding: 10px;
+    }
+    .projects-container{
+        flex-direction: column;
+       
+    }
+    .projects-article{
+        width: 100%;
+        height: auto;
+    }
+    .projects-article:nth-child(4)::after{
+        transform: translateY(40px);
+        
+    }
+  }
+
+
+  
