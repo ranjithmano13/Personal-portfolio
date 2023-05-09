@@ -10,13 +10,12 @@ body{
 
 
 
-.nav-bar h1{
+.nav-bar > h1{
     white-space: nowrap;
     margin-top: 0em;
     color: teal;
-    cursor: url('images/batman.png'),auto; 
-    
 }
+
 
 
 .nav-list{
