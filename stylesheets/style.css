@@ -262,9 +262,7 @@ body{
 }
 
 .exp-timer{
-    
-    padding: 30px;
-    
+    padding: 30px; 
     background-color: gold;
     border-radius: 15px;
     text-align: center;
@@ -579,6 +577,9 @@ footer{
     }
     .nav-list{
         display: none;
+    }
+    .hero-section{
+        height: 80vh;
     }
     .hero-article header h2{
         display: none;
